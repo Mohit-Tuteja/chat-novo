@@ -11,16 +11,16 @@ const append = (message, position)=>{
     
 }
 
-const name = prompt("To join, type your name");
-socket.emit('new-user-joined',name);
+const naam = prompt("To join, type your name");
+socket.emit('new-user-joined',naam);
 socket.on('user-joined',data=>{
-    append(`${name} joined the chat`, 'right');
+    append(`${naam} joined the chat`, 'right');
 })
 socket.on('receive',data=>{
-    append(`${data.name}:${data.message}`, 'left');
+    append(`${data.naam}:${data.message}`, 'left');
 })
-socket.on('left',name=>{
-    append(`${name} left the chat`,'right');
+socket.on('left',naam=>{
+    append(`${naam} left the chat`,'right');
 })
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
