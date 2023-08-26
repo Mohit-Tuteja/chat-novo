@@ -17,7 +17,7 @@ socket.on('user-joined',data=>{
     append(`${naam} joined the chat`, 'right');
 })
 socket.on('receive',data=>{
-    append(`${data.naam}:${data.message}`, 'left');
+    append(`${data.name}:${data.message}`, 'left');
 })
 socket.on('left',naam=>{
     append(`${naam} left the chat`,'right');
