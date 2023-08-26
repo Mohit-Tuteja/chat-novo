@@ -1,7 +1,7 @@
 .logo{
     display: block;
     margin: auto;
-    height: 30 px;
+    height: 50 px;
     width: 150px;
 }
 .container{
@@ -31,10 +31,22 @@ h1{
 .left{
     float: left;
     clear: both;
+    background-color: yellow;
+    width: 40%;
+    padding: 12px;
+    margin: 10px 16px;
+    border: 2px solid black;
+    border-radius: 12px;
 }
 .right{
-    float: left;
+    float: right;
     clear: both;
+    background-color: yellow;
+    width: 40%;
+    padding: 12px;
+    margin: 10px 16px;
+    border: 2px solid black;
+    border-radius: 12px;
 }
 #submit{
     margin: auto;
