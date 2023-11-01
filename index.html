@@ -32,3 +32,27 @@
 </div>
 </body>
 </html>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA8L_7nAdVSUYnAdaZAh-J-lJ-Kp13hA2g",
+      authDomain: "chat-novo-32dd9.firebaseapp.com",
+      projectId: "chat-novo-32dd9",
+      storageBucket: "chat-novo-32dd9.appspot.com",
+      messagingSenderId: "209348945391",
+      appId: "1:209348945391:web:46e55d29fcfb9d289a021a",
+      measurementId: "G-FYD4P13ECG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+  </script>

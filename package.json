@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "socket.io": "^4.7.1"
-  }
+  },
+  "scripts":{
+    "start": "cd Node Server && nodemon ./index.js"
+}
 }
